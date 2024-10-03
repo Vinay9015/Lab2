@@ -118,22 +118,39 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap:10px;
+	grid-template-rows: 100px 300px 100px;
 
 }
 
 #grid-section3 .box1 {
+	order:1;
+	grid-column:1/3;
+	grid-row:1/1;
 
 }
 
 #grid-section3 .box2 {
+	order:3;
+	grid-column: 2/3;
+	grid-row:2/3;
 
 }
 
 #grid-section3 .box3 {
+	order:3;
+	grid-column:1/2;
+	grid-row:2/3;
 
 }
 
 #grid-section3 .box4 {
+	order:4;
+	grid-column: 1/3;
+	grid-row:3/4;
 
 }
 
